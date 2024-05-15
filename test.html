@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Proxy</title>
+</head>
+<body>
+    <h1>Google Proxy</h1>
+    <p>Click the button below to open Google through a proxy:</p>
+    <button onclick="openGoogle()">Open Google</button>
+
+    <script>
+        function openGoogle() {
+            // Replace 'https://your-proxy-url.com/' with the URL of your proxy server
+            var proxyUrl = 'https://your-proxy-url.com/';
+
+            // Replace 'https://www.google.com/' with the URL of Google or any other website you want to access
+            var googleUrl = 'https://www.google.com/';
+
+            window.open(proxyUrl + '?url=' + encodeURIComponent(googleUrl), '_blank');
+        }
+    </script>
+</body>
+</html>
